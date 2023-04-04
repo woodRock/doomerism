@@ -15,10 +15,11 @@ pub fn home() -> Html {
     html! {
         <div>
             <h1>{ "How doomer are you?" } </h1>
-            <p> { "For each term, respond to how much your beleifs align with the term, and the definition provideded here."} </p>
+            <p> { "For each term, respond to how much your beleifs align with the term, and the definition provided here."} </p>
+            <p> { "Note: only works on a desktop computer (for now!) 🖥️"} </p>
 
             <h3>{ "Transhumanism" }</h3>
-            <p> { "The belief that humans can and should use technology to improve themselves (CoPilot)" } </p>
+            <p> { "The belief that humans can and should use technology to improve themselves (CoPilot)." } </p>
             <div id="position-buttons-for-user">
                 <button onclick={Callback::from(|_| (
                         info!("Transhumanism - Strongly disagree (-2)")
@@ -53,7 +54,7 @@ pub fn home() -> Html {
             </div>
 
             <h3>{ "Extropianism" }</h3>
-            <p> { "evolving framework of values and standards for continuously improving the human condition (Wikipedia)" } </p>
+            <p> { "Evolving framework of values and standards for continuously improving the human condition (Wikipedia)." } </p>
             <div id="position-buttons-for-user">
                 <button onclick={Callback::from(|_| (
                         info!("Extropianism - Strongly disagree (-2)")
@@ -88,7 +89,7 @@ pub fn home() -> Html {
             </div>
 
             <h3>{ "Singularitarianism" }</h3>
-            <p> { "The belief that the development of artificial intelligence will lead to a technological singularity (CoPilot)" } </p>
+            <p> { "The belief that the development of artificial intelligence will lead to a technological singularity (CoPilot)." } </p>
             <div id="position-buttons-for-user">
                 <button onclick={Callback::from(|_| (
                         info!("Singularitarianism - Strongly disagree (-2)")
@@ -123,7 +124,7 @@ pub fn home() -> Html {
             </div>
         
             <h3>{ "Cosmism" }</h3>
-            <p> { "The doctrine that the material universe works automatically; affirmative atheism (Century Dictionary)" } </p>
+            <p> { "The doctrine that the material universe works automatically; affirmative atheism (Century Dictionary)." } </p>
             <div id="position-buttons-for-user">
                 <button onclick={Callback::from(|_| (
                     info!("Cosmism - Strongly disagree")
@@ -158,7 +159,7 @@ pub fn home() -> Html {
             </div>
 
             <h3>{ "Rationalism" }</h3>
-            <p> { "The belief that reason is the chief source and test of knowledge (CoPilot)" } </p>
+            <p> { "The belief that reason is the chief source and test of knowledge (CoPilot)." } </p>
             <div id="position-buttons-for-user">
                 <button onclick={Callback::from(|_| (
                     info!("Rationalism - Strongly disagree (-2)")
@@ -228,7 +229,7 @@ pub fn home() -> Html {
             </div>
 
             <h3>{ "Longtermism" }</h3>
-            <p> { "The belief that the long-term future of humanity is more important than the short-term (CoPilot)" } </p>
+            <p> { "The belief that the long-term future of humanity is more important than the short-term (CoPilot)." } </p>
             <div id="position-buttons-for-user">
                 <button onclick={Callback::from(|_| (
                     info!("Longtermism - Strongly disagree (-2)")
@@ -282,7 +283,7 @@ pub fn home() -> Html {
                         <td>{"Prepare to be ALIGNED!"}</td>
                     </tr>
                     <tr>
-                        <td>{"Bloom curious"}</td>
+                        <td>{"Bloom-curious"}</td>
                         <td>{"-13 to -8"}</td>
                         <td>{"Yann LeCun"}</td>
                         <td>{"'AI doomism is quickly becoming indistinguishable from an apocalyptic religion.' ~ Yann LeCun"}</td>
@@ -294,7 +295,7 @@ pub fn home() -> Html {
                         <td>{"Stick to cars, and rockets, and internet, future king of Mars! 👑"}</td>
                     </tr>
                     <tr>
-                        <td>{"Doom curious"}</td>
+                        <td>{"Doom-curious"}</td>
                         <td>{"8 to 13"}</td>
                         <td>{"Nick Bostrom"}</td>
                         <td>{"Terminator was good... but it was just a movie! 😎"}</td>
