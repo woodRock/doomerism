@@ -301,7 +301,7 @@ pub fn home() -> Html {
                         <td>{"Terminator was good... but it was just a movie! 😎"}</td>
                     </tr>
                     <tr>
-                        <td>{"Full-doomer"}</td>
+                        <td>{"Doomer"}</td>
                         <td>{"13+"}</td>
                         <td>{ "Eliezer Yudkowsky" }</td>
                         <td>{"Please unblock me on Twitter! ❤️"}</td>
