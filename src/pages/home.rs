@@ -279,13 +279,13 @@ pub fn home() -> Html {
                         <td>{"Bloomer"}</td>
                         <td>{"-14 or lower"}</td>
                         <td>{"Sam Altman"}</td>
-                        <td>{"0-20"}</td>
+                        <td>{"Prepare to be ALIGNED!"}</td>
                     </tr>
                     <tr>
                         <td>{"Bloom curious"}</td>
                         <td>{"-13 to -8"}</td>
                         <td>{"Yann LeCun"}</td>
-                        <td>{"21-40"}</td>
+                        <td>{"'AI doomism is quickly becoming indistinguishable from an apocalyptic religion.' ~ Yann LeCun"}</td>
                     </tr>
                     <tr>
                         <td>{"NPC"}</td>
