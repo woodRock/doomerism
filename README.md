@@ -1,9 +1,9 @@
-# StardustSoftwareNZ.github.io
+# Doomerism
 
-[![CI](https://github.com/StardustSoftwareNZ/StardustSoftwareNZ.github.io/actions/workflows/ci.yml/badge.svg)](https://github.com/StardustSoftwareNZ/StardustSoftwareNZ.github.io/actions/workflows/ci.yml)
-[![gh pages](https://github.com/StardustSoftwareNZ/StardustSoftwareNZ.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/StardustSoftwareNZ/StardustSoftwareNZ.github.io/actions/workflows/pages/pages-build-deployment)
+[![CI](https://github.com/woodRock/doomerism/actions/workflows/ci.yml/badge.svg)](https://github.com/woodRock/doomerism.github.io/actions/workflows/ci.yml)
+[![gh pages](https://github.com/woodRock/doomerism/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/woodRock/doomerismactions/workflows/pages/pages-build-deployment)
 
-Stardust Software NZ Website
+Are you a doomer? Find out in this bare mininium 1980s-ish HTML website.
 
 ## Rust Frontend
 
