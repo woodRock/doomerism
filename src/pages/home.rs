@@ -15,7 +15,7 @@ pub fn home() -> Html {
     html! {
         <div>
             <h1>{ "How doomer are you?" } </h1>
-            <p> { "For each term, respond to how much your beleifs align with the term, and the definition provided here."} </p>
+            <p> { "For each term, respond to how much your beliefs align with the term, and the definition provided here."} </p>
             <p> { "Note: only works on a desktop computer (for now!) 🖥️"} </p>
 
             <h3>{ "Transhumanism" }</h3>
