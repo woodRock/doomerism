@@ -127,7 +127,7 @@ pub fn home() -> Html {
             <p> { "The doctrine that the material universe works automatically; affirmative atheism (Century Dictionary)." } </p>
             <div id="position-buttons-for-user">
                 <button onclick={Callback::from(|_| (
-                    info!("Cosmism - Strongly disagree")
+                    info!("Cosmism - Strongly disagree (-2)")
                 ))}>
                     //      ^^^^^^^ event listener name
                     { "Strongly disagree" }
