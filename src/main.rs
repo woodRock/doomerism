@@ -7,6 +7,7 @@ use yew_router::prelude::*;
 mod components;
 mod pages;
 mod routes;
+mod api;
 
 use crate::routes::{switch, Route};
 

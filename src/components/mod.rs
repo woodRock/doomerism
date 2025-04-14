@@ -8,3 +8,12 @@ pub use return_home::ReturnHome;
 
 pub mod navigation;
 pub use navigation::Navigation;
+
+pub mod quiz_question;
+pub mod results_table;
+pub mod score_display;
+
+// Re-export components for easier imports
+pub use quiz_question::QuizQuestionComponent;
+pub use results_table::ResultsTable;
+pub use score_display::ScoreDisplay;
