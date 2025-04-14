@@ -1,0 +1,266 @@
+/* Cyberpunk 404 Page Styles */
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .error-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+      linear-gradient(
+        to bottom, 
+        transparent 0%, 
+        rgba(0, 242, 255, 0.1) 100%
+      );
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .error-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    pointer-events: none;
+    z-index: 2;
+    animation: scanAnimation 8s linear infinite;
+  }
+  
+  /* Glitch effect for 404 */
+  .glitch-container {
+    position: relative;
+    margin-bottom: 2rem;
+    z-index: 3;
+  }
+  
+  .glitch {
+    font-size: 12rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 
+      0.05em 0 0 var(--danger-color),
+      -0.05em -0.025em 0 var(--primary-color);
+    animation: glitch 3s infinite;
+    color: var(--light-text-color);
+  }
+  
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .glitch::before {
+    left: 0.05em;
+    text-shadow: -0.05em 0 var(--primary-color);
+    animation: glitch-anim 3s infinite linear alternate-reverse;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  }
+  
+  .glitch::after {
+    left: -0.05em;
+    text-shadow: 0.05em 0 var(--danger-color);
+    animation: glitch-anim2 2.5s infinite linear alternate-reverse;
+    clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+  }
+  
+  /* Error message container */
+  .error-message {
+    background-color: rgba(43, 33, 58, 0.8);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 
+      0 0 20px rgba(0, 242, 255, 0.3),
+      0 0 40px rgba(0, 242, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+  }
+  
+  .subtitle {
+    color: var(--danger-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.15em;
+  }
+  
+  .message {
+    color: var(--light-text-color);
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  
+  /* Terminal effect */
+  .terminal {
+    background-color: rgba(12, 12, 20, 0.9);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: monospace;
+    position: relative;
+  }
+  
+  .terminal-text {
+    color: var(--success-color);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+  }
+  
+  .terminal-text:nth-child(2) {
+    color: var(--warning-color);
+  }
+  
+  .terminal-text:nth-child(3) {
+    color: var(--primary-color);
+  }
+  
+  .blink {
+    color: var(--primary-color);
+    font-size: 1rem;
+    animation: blink 1s infinite;
+    display: inline-block;
+  }
+  
+  /* Scanline effect */
+  .scanline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-color);
+    opacity: 0.15;
+    z-index: 4;
+    animation: scanline 6s linear infinite;
+  }
+  
+  /* Return home button container */
+  .return-btn-container {
+    text-align: center;
+  }
+  
+  /* Animations */
+  @keyframes glitch {
+    0% {
+      text-shadow: 
+        0.05em 0 0 var(--danger-color),
+        -0.05em -0.025em 0 var(--primary-color);
+    }
+    25% {
+      text-shadow: 
+        -0.05em -0.025em 0 var(--danger-color),
+        0.025em 0.025em 0 var(--primary-color);
+    }
+    50% {
+      text-shadow: 
+        0.025em 0.05em 0 var(--danger-color),
+        -0.05em -0.05em 0 var(--primary-color);
+    }
+    75% {
+      text-shadow: 
+        -0.05em -0.05em 0 var(--danger-color),
+        0.05em 0.025em 0 var(--primary-color);
+    }
+    100% {
+      text-shadow: 
+        0.05em 0 0 var(--danger-color),
+        -0.05em -0.025em 0 var(--primary-color);
+    }
+  }
+  
+  @keyframes glitch-anim {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(2px); }
+    50% { transform: translateX(-2px); }
+    75% { transform: translateX(1px); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes glitch-anim2 {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    50% { transform: translateX(2px); }
+    75% { transform: translateX(-1px); }
+    100% { transform: translateX(0); }
+  }
+  
+  @keyframes blink {
+    0%, 49% { opacity: 1; }
+    50%, 100% { opacity: 0; }
+  }
+  
+  @keyframes scanline {
+    0% { top: 0; }
+    100% { top: 100%; }
+  }
+  
+  @keyframes scanAnimation {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .glitch {
+      font-size: 8rem;
+    }
+    
+    .error-message {
+      padding: 1.5rem;
+    }
+    
+    .subtitle {
+      font-size: 1.25rem;
+    }
+    
+    .message {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .glitch {
+      font-size: 5rem;
+    }
+    
+    .error-message {
+      padding: 1rem;
+    }
+  }

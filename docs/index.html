@@ -1,9 +1,23 @@
-<!DOCTYPE html><html><head>
+<!DOCTYPE html>
+<html>
+    <head>
         <meta charset="utf-8">
         <title>doomer? 🤖</title>
         <link rel="icon" type="image/png" href="/public/logo.png">
-        <link rel="stylesheet" href="/doomerism/styles-152e2fb10c80e869.css">
-    
-<link rel="preload" href="/doomerism/website-b68158717f429937_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/doomerism/website-b68158717f429937.js"></head>
-<body><script type="module">import init from '/doomerism/website-b68158717f429937.js';init('/doomerism/website-b68158717f429937_bg.wasm');</script></body></html>
+        <link rel="stylesheet" href="/doomerism/styles-c8fcb1fc6ab984c.css" integrity="sha384-9Ln0kmSv6c943wiqq9ndNXeXtMLF2LXiN7vJnV6JZ0ZiwMYBagbxvwIHsSY3V6fj"/>
+        <link rel="stylesheet" href="/doomerism/home-eb06a4cc559e81a8.css" integrity="sha384-VjyjN79/dZKN+a3SsTUmxoaqK2faJEUlZjakxKMghgOGEM5tsdoStNIcWzhhWdKP"/>
+        <link rel="stylesheet" href="/doomerism/error-9e1c4c7e081a8e8a.css" integrity="sha384-PUmo6vnmm9+AgQdadH2eerfyPEiXxHy4ULhfUJpfVUW5hlH8hIpc2GBLcVTGAhLu"/>
+        
+<script type="module">
+import init, * as bindings from '/doomerism/website-a90dedb9080a100d.js';
+const wasm = await init({ module_or_path: '/doomerism/website-a90dedb9080a100d_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script>
+    <link rel="modulepreload" href="/doomerism/website-a90dedb9080a100d.js" crossorigin="anonymous" integrity="sha384-DBRYQSWY/rcSwuyq3gbovAeN52FK8upCWESN6Rbl6KMYLfil/l1paxAdm6HQuzMQ"><link rel="preload" href="/doomerism/website-a90dedb9080a100d_bg.wasm" crossorigin="anonymous" integrity="sha384-ah7HZDvXfgUAci3Nn7en19EyOmP+peCCk4YjfeLsr0gTZcbkX1Um3V5nBf03Z3Ar" as="fetch" type="application/wasm"></head>
+</html>
